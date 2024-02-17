@@ -16,7 +16,7 @@ document.getElementById('convocationForm').addEventListener('submit', function (
   if (isDraft) {
     window.location.href = 'editResponse.html';
   } else {
-    fetch('http://localhost:3000/submitForm', {
+    fetch('https://form-backend-six.vercel.app/submitForm', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -32,3 +32,21 @@ document.getElementById('convocationForm').addEventListener('submit', function (
       });
   }
 });
+function updateFileName() {
+  // Get the input element
+  var input = document.getElementById('exampleInputFile');
+  // Get the file name
+  var fileName = input.files[0].name;
+  // Update the span element with the file name
+  var selectedFileNameElement = document.getElementById('selectedFileName');
+  selectedFileNameElement.textContent = 'Selected file: ' + fileName;
+}
+function updateFileName1() {
+  // Get the input element
+  var input = document.getElementById('exampleInputFile1');
+  // Get the file name
+  var fileName = input.files[0].name;
+  // Update the span element with the file name
+  var selectedFileNameElement = document.getElementById('selectedFileName1');
+  selectedFileNameElement.textContent = 'Selected file: ' + fileName;
+}
