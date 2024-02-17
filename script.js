@@ -11,23 +11,30 @@ document.getElementById('convocationForm').addEventListener('submit', function (
     }
   }
   console.log(formData);
-  fetch('http://localhost:3000/submitForm', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(formData)
-  })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
+  var isDraft = document.getElementById('isDraft').checked;
+
+  if (isDraft) {
+    window.location.href = 'editResponse.html';
+  } else {
+    fetch('http://localhost:3000/submitForm', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
     })
-    .then(data => {
-      console.log('Form data submitted successfully:', data);
-    })
-    .catch(error => {
-      console.error('Error submitting form data:', error);
-    });
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Form data submitted successfully:', data);
+        window.location.href = 'submissionConfirmation.html';
+      })
+      .catch(error => {
+        console.error('Error submitting form data:', error);
+      });
+  }
 });
