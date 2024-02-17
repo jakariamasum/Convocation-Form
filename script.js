@@ -23,15 +23,9 @@ document.getElementById('convocationForm').addEventListener('submit', function (
       },
       body: JSON.stringify(formData)
     })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
       .then(data => {
         console.log('Form data submitted successfully:', data);
-        window.location.href = 'submissionConfirmation.html';
+        window.location.href = 'submitSuccess.html';
       })
       .catch(error => {
         console.error('Error submitting form data:', error);
