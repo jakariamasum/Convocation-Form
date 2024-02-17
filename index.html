@@ -50,7 +50,7 @@
       </ul>
 
       <!-- Right navbar links -->
-      
+
     </nav>
     <!-- /.navbar -->
 
@@ -92,7 +92,7 @@
                   Dashboard
                 </p>
               </a>
-              
+
             </li>
             <li class="nav-item">
               <a href="pages/widgets.html" class="nav-link">
@@ -131,7 +131,7 @@
       <!-- Main content -->
       <section class="content">
         <div class="container-fluid">
-          <form>
+          <form id="convocationForm">
             <!-- personal information start -->
             <div style="margin-bottom:0px; padding-bottom:10px">
               <div>
@@ -143,33 +143,29 @@
             <div>
               <div class="form-group">
                 <label>Name: [As per S.S.C Certificate] *</label>
-                <input type="text" class="form-control" placeholder="Name" fdprocessedid="zjgbmj" required>
+                <input type="text" class="form-control" placeholder="Name" fdprocessedid="zjgbmj" name="name"  >
               </div>
               <div class="row">
                 <div class="form-group col-md-6">
                   <label>Father's Name: * </label>
-                  <input type="text" class="form-control" placeholder="Father's Name" fdprocessedid="zjgbmj" required>
+                  <input type="text" name="FatherName" class="form-control" placeholder="Father's Name" fdprocessedid="zjgbmj"  >
                 </div>
                 <div class="form-group col-md-6">
                   <label>Mother's Name: * </label>
-                  <input type="text" class="form-control" placeholder="Mother's Name" fdprocessedid="zjgbmj" required>
+                  <input type="text" name="MotherName" class="form-control" placeholder="Mother's Name" fdprocessedid="zjgbmj"  >
                 </div>
               </div>
               <div class="row">
                 <div class="form-group col-md-6">
                   <label>Birth Date</label>
                   <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                    <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"
+                    <input type="date" name="birthDate" class="form-control datetimepicker-input" data-target="#reservationdate"
                       fdprocessedid="xa185p">
-                    <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
-                      <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                    </div>
                   </div>
                 </div>
-  
                 <div class="form-group col-md-6">
                   <label>Gender</label>
-                  <select class="form-control" fdprocessedid="5macxi">
+                  <select class="form-control" fdprocessedid="5macxi" name="gender">
                     <option>Select Gender</option>
                     <option>Male</option>
                     <option>Female</option>
@@ -190,36 +186,36 @@
             <div>
               <div class="form-group">
                 <label>Name of Degree: </label>
-                <input type="text" class="form-control" placeholder="Degree" fdprocessedid="zjgbmj" required>
+                <input type="text" name="undergraduatedDegree" class="form-control" placeholder="Degree" fdprocessedid="zjgbmj"  >
               </div>
               <div class="row">
                 <div class="form-group col-md-4">
                   <label>Admission Session</label>
-                  <input type="number" class="form-control" placeholder="Session" fdprocessedid="zjgbmj" required>
+                  <input type="number" name="undergraduatedSession" class="form-control" placeholder="Session" fdprocessedid="zjgbmj"  >
                 </div>
                 <div class="form-group col-md-4">
                   <label>Registration Number</label>
-                  <input type="number" class="form-control" placeholder="Registration number" fdprocessedid="zjgbmj"
-                    required>
+                  <input type="number" name="undergraduatedReg" class="form-control" placeholder="Registration number" fdprocessedid="zjgbmj"
+                     >
                 </div>
                 <div class="form-group col-md-4">
                   <label>Batch</label>
-                  <input type="number" class="form-control" placeholder="Batch" fdprocessedid="zjgbmj" required>
+                  <input type="number" name="undergraduatedBatch" class="form-control" placeholder="Batch" fdprocessedid="zjgbmj"  >
                 </div>
               </div>
               <div class="row">
                 <div class="form-group col-md-4">
                   <label>Year of Passing: </label>
-                  <input type="text" class="form-control" placeholder="Year of Passing" fdprocessedid="zjgbmj" required>
+                  <input type="text" name="undergraduatedPassYear" class="form-control" placeholder="Year of Passing" fdprocessedid="zjgbmj"  >
                 </div>
                 <div class="form-group col-md-4">
                   <label>Graduating Session </label>
-                  <input type="text" class="form-control" placeholder="Graduating Session" fdprocessedid="zjgbmj"
-                    required>
+                  <input type="text" name="undergraduatedGratuadeSession" class="form-control" placeholder="Graduating Session" fdprocessedid="zjgbmj"
+                     >
                 </div>
                 <div class="form-group col-md-4">
                   <label>CGPA </label>
-                  <input type="text" class="form-control" placeholder="CGPA" fdprocessedid="zjgbmj" required>
+                  <input type="text" name="undergraduatedCGPA" class="form-control" placeholder="CGPA" fdprocessedid="zjgbmj"  >
                 </div>
               </div>
             </div>
@@ -236,36 +232,36 @@
             <div>
               <div class="form-group">
                 <label>Name of Degree: </label>
-                <input type="text" class="form-control" placeholder="Degree" fdprocessedid="zjgbmj" required>
+                <input type="text" name="graduateDegree" class="form-control" placeholder="Degree" fdprocessedid="zjgbmj"  >
               </div>
               <div class="row">
                 <div class="form-group col-md-4">
                   <label>Admission Session</label>
-                  <input type="number" class="form-control" placeholder="Session" fdprocessedid="zjgbmj" required>
+                  <input type="number" name="graduateSession" class="form-control" placeholder="Session" fdprocessedid="zjgbmj"  >
                 </div>
                 <div class="form-group col-md-4">
                   <label>Registration Number</label>
-                  <input type="number" class="form-control" placeholder="Registration number" fdprocessedid="zjgbmj"
-                    required>
+                  <input type="number" name="graduateReg" class="form-control" placeholder="Registration number" fdprocessedid="zjgbmj"
+                     >
                 </div>
                 <div class="form-group col-md-4">
                   <label>Batch</label>
-                  <input type="number" class="form-control" placeholder="Batch" fdprocessedid="zjgbmj" required>
+                  <input type="number" name="graduateBatch" class="form-control" placeholder="Batch" fdprocessedid="zjgbmj"  >
                 </div>
               </div>
               <div class="row">
                 <div class="form-group col-md-4">
                   <label>Year of Passing: </label>
-                  <input type="text" class="form-control" placeholder="Year of Passing" fdprocessedid="zjgbmj" required>
+                  <input type="text" name="graduatePassYear" class="form-control" placeholder="Year of Passing" fdprocessedid="zjgbmj"  >
                 </div>
                 <div class="form-group col-md-4">
                   <label>Graduating Session </label>
-                  <input type="text" class="form-control" placeholder="Graduating Session" fdprocessedid="zjgbmj"
-                    required>
+                  <input type="text" name="graduateSession" class="form-control" placeholder="Graduating Session" fdprocessedid="zjgbmj"
+                     >
                 </div>
                 <div class="form-group col-md-4">
                   <label>CGPA </label>
-                  <input type="text" class="form-control" placeholder="CGPA" fdprocessedid="zjgbmj" required>
+                  <input type="text" name="graduateCGPA" class="form-control" placeholder="CGPA" fdprocessedid="zjgbmj"  >
                 </div>
               </div>
             </div>
@@ -280,20 +276,20 @@
               </div>
               <div class="form-group">
                 <label>Parmanent Address </label>
-                <input type="text" class="form-control" placeholder="Parmanent Address" fdprocessedid="zjgbmj" required>
+                <input type="text" name="parmanentAddress" class="form-control" placeholder="Parmanent Address" fdprocessedid="zjgbmj"  >
               </div>
               <div class="form-group">
                 <label>Present Address </label>
-                <input type="text" class="form-control" placeholder="Present Address" fdprocessedid="zjgbmj" required>
+                <input type="text" name="presentAddress" class="form-control" placeholder="Present Address" fdprocessedid="zjgbmj"  >
               </div>
               <div class="row">
                 <div class="form-group col-md-6">
                   <label>Mobile No. </label>
-                  <input type="number" class="form-control" placeholder="Mobile No." fdprocessedid="zjgbmj" required>
+                  <input type="number" name="mobileNo" class="form-control" placeholder="Mobile No." fdprocessedid="zjgbmj"  >
                 </div>
                 <div class="form-group col-md-6">
                   <label>Email </label>
-                  <input type="email" class="form-control" placeholder="Email" fdprocessedid="zjgbmj" required>
+                  <input type="email" name="email" class="form-control" placeholder="Email" fdprocessedid="zjgbmj"  >
                 </div>
               </div>
             </div>
@@ -309,16 +305,16 @@
               <div class="row">
                 <div class="form-group col-md-6">
                   <label>Employer </label>
-                  <input type="text" class="form-control" placeholder="Employer" fdprocessedid="zjgbmj" required>
+                  <input type="text" name="Employer" class="form-control" placeholder="Employer" fdprocessedid="zjgbmj"  >
                 </div>
                 <div class="form-group col-md-6">
                   <label>Designation </label>
-                  <input type="text" class="form-control" placeholder="Designation" fdprocessedid="zjgbmj" required>
+                  <input type="text" name="Designation" class="form-control" placeholder="Designation" fdprocessedid="zjgbmj"  >
                 </div>
               </div>
               <div class="form-group">
                 <label>Official Address </label>
-                <input type="text" class="form-control" placeholder="Address" fdprocessedid="zjgbmj" required>
+                <input type="text" name="OfficialAddress" class="form-control" placeholder="Address" fdprocessedid="zjgbmj"  >
               </div>
             </div>
 
@@ -332,25 +328,27 @@
               <div class="row">
                 <div class="form-group col-md-4">
                   <label>Total amount TK. </label>
-                  <input type="number" class="form-control" placeholder="Total amount TK." fdprocessedid="zjgbmj" required>
+                  <input type="number" name="totalTK" class="form-control" placeholder="Total amount TK." fdprocessedid="zjgbmj"
+                     >
                 </div>
                 <div class="form-group col-md-4">
                   <label>Deposite bank Name </label>
-                  <input type="text" class="form-control" placeholder="Bank Name" fdprocessedid="zjgbmj" required>
+                  <input type="text" name="DepositeBank" class="form-control" placeholder="Bank Name" fdprocessedid="zjgbmj"  >
                 </div>
                 <div class="form-group col-md-4">
                   <label>Branch </label>
-                  <input type="text" class="form-control" placeholder="Branch" fdprocessedid="zjgbmj" required>
+                  <input type="text" name="Branch" class="form-control" placeholder="Branch" fdprocessedid="zjgbmj"  >
                 </div>
               </div>
               <div class="row">
                 <div class="form-group col-md-6">
                   <label>Bank Recpiepet No./Bkash No. </label>
-                  <input type="number" class="form-control" placeholder="Recpiepet/Bkash No" fdprocessedid="zjgbmj" required>
+                  <input type="number" name="RecpiepetNo" class="form-control" placeholder="Recpiepet/Bkash No" fdprocessedid="zjgbmj"
+                     >
                 </div>
                 <div class="form-group col-md-6">
                   <label>Date </label>
-                  <input type="date" class="form-control" placeholder="Payment Date" fdprocessedid="zjgbmj" required>
+                  <input type="date" name="date" class="form-control" placeholder="Payment Date" fdprocessedid="zjgbmj"  >
                 </div>
               </div>
             </div>
@@ -367,11 +365,11 @@
               <div class="row">
                 <div class="form-group col-sm-6">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radio1">
+                    <input class="form-check-input"  type="radio" name="transporationRequirement">
                     <label class="form-check-label">Yes</label>
                   </div>
                   <div class="form-check col-sm-6">
-                    <input class="form-check-input" type="radio" name="radio1">
+                    <input class="form-check-input" type="radio" name="transporationRequirement">
                     <label class="form-check-label">No</label>
                   </div>
                 </div>
@@ -381,41 +379,49 @@
 
             <!-- upload documents start -->
             <div>
-            <div>
+              <div>
                 <h2 class="text-info text-uppercase mt-4">
                   Uploads documents
                 </h2>
               </div>
-            <div class="row">
-            <div class="form-group col-md-6">
-                    <label for="exampleInputFile">File input</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="exampleInputFile">File input</label>
+                  <div class="input-group">
+                    <div class="custom-file">
+                      <input type="file" name="fileInput" class="custom-file-input" id="exampleInputFile">
+                      <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                     </div>
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="exampleInputFile">File input</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="exampleInputFile">File input</label>
+                  <div class="input-group">
+                    <div class="custom-file">
+                      <input type="file" name="fileInput1" class="custom-file-input" id="exampleInputFile">
+                      <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                     </div>
                   </div>
-                  </div>
+                </div>
+              </div>
             </div>
             <!-- upload documents closed -->
 
+            <!-- draft -->
+            <div>
+              <label for="isDraft">Save as draft</label>
+              <input type="checkbox" id="isDraft" name="isDraft"><br>
+            </div>
+
             <!-- submitt button -->
             <div>
-                  <button type="submit" class="btn btn-danger" fdprocessedid="rk4f3b">Submit Now</button>
-                </div>
+              <button type="submit" class="btn btn-danger" fdprocessedid="rk4f3b">Submit Now</button>
+            </div>
           </form>
+          <div id="response"></div>
 
-        </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.container-fluid -->
       </section>
       <!-- /.content -->
     </div>
@@ -470,6 +476,7 @@
   <script src="dist/js/demo.js"></script>
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="dist/js/pages/dashboard.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
